@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "176494409738",
+    "project_id": "krishi-app-9eb29",
+    "storage_bucket": "krishi-app-9eb29.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176494409738:android:a80faa6936cb22a07a07f3",
+        "android_client_info": {
+          "package_name": "in.ascentrasolutions.krishi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7KyXMOnmFhQYeXLkjvFwqcvnS3iMs4ZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

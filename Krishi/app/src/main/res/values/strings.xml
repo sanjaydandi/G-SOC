@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Krishi</string>
+    <string name="app_logo">App logo</string>
+    <string name="home">Home</string>
+    <string name="weather">Weather</string>
+    <string name="companies">Companies</string>
+    <string name="explore">Explore</string>
+    <string name="upload">Upload</string>
+
+    <string name="default_web_client_id">176494409738-nam2r9612a8poccu2vb14n3miekbb57p.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="maxTemp">Maximum Temperature in C</string>
+    <string name="minTemp">Minimum Temperature in C</string>
+    <string name="avgTemp">Average Temperature in C</string>
+    <string name="itRain">Rain chances</string>
+    <string name="windKph">Wind speed in KPH </string>
+
+    <string name="value">33.3</string>
+
+
+    <string name="time">Time</string>
+    <string name="temp_c">Temperature in C</string>
+    <string name="humidity">Humidity</string>
+    <string name="cloud">Cloud</string>
+    <string name="windChill">Wind Chill in C</string>
+    <string name="heat">Heat in climate</string>
+    <string name="dewPoint">Dew point in C</string>
+
+    <string name="signIn">Sign In</string>
+
+    <string name="quantity">Quantity</string>
+    <string name="excepting">Excepting</string>
+    <string name="product">Product name</string>
+    <string name="sellWaste">Sell waste or timeout products</string>
+
+    <string name="today">Today is best day for farming</string>
+
+    <string name="contact">Contact Now</string>
+
+
+</resources>

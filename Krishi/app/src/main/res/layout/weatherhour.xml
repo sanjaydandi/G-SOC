@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/weatherHourCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/WeatherHourImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+                android:contentDescription="@string/value"
+                android:src="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.009"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/WeatherHourImageView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/WeatherHourImageView"
+                app:layout_constraintTop_toBottomOf="@+id/WeatherHourImageView" />
+
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/value"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.878"
+                app:layout_constraintStart_toEndOf="@+id/time"
+                app:layout_constraintTop_toBottomOf="@+id/WeatherHourImageView" />
+
+            <TextView
+                android:id="@+id/temp_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_c"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/timeText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/time"
+                app:layout_constraintTop_toBottomOf="@+id/time" />
+
+            <TextView
+                android:id="@+id/temp_cText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/value"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/timeText"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/temp_c"
+                app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+            <TextView
+                android:id="@+id/windKph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/windKph"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/temp_c"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/temp_c"
+                app:layout_constraintTop_toBottomOf="@+id/temp_c" />
+
+
+            <TextView
+                android:id="@+id/windKphText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/value"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/temp_cText"
+                app:layout_constraintStart_toEndOf="@+id/windKph"
+                app:layout_constraintTop_toBottomOf="@+id/temp_cText" />
+
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/humidity"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/windKph"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/windKph"
+                app:layout_constraintTop_toBottomOf="@+id/windKph" />
+
+
+            <TextView
+                android:id="@+id/humidityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="@string/value"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/windKphText"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/humidity"
+                app:layout_constraintTop_toBottomOf="@+id/windKphText" />
+
+            <TextView
+                android:id="@+id/cloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cloud"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/humidity"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/humidity"
+                app:layout_constraintTop_toBottomOf="@+id/humidity" />
+
+            <TextView
+                android:id="@+id/cloudText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:text="@string/value"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/humidityText"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/cloud"
+                app:layout_constraintTop_toBottomOf="@+id/humidityText" />
+
+            <TextView
+                android:id="@+id/windChill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/windChill"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/cloud"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/cloud"
+                app:layout_constraintTop_toBottomOf="@+id/cloud" />
+
+
+            <TextView
+                android:id="@+id/windChillText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/value"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/cloudText"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/windChill"
+                app:layout_constraintTop_toBottomOf="@+id/cloudText" />
+
+            <TextView
+                android:id="@+id/heat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/heat"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/windChill"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/windChill"
+                app:layout_constraintTop_toBottomOf="@+id/windChill" />
+
+
+            <TextView
+                android:id="@+id/heatText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="@string/value"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/windChillText"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/heat"
+                app:layout_constraintTop_toBottomOf="@+id/windChillText" />
+
+            <TextView
+                android:id="@+id/dewPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dewPoint"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/heat"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/heat"
+                app:layout_constraintTop_toBottomOf="@+id/heat" />
+
+            <TextView
+                android:id="@+id/dewPointText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/value"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/heatText"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/dewPoint"
+                app:layout_constraintTop_toBottomOf="@+id/heatText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
