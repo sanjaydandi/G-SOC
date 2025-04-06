@@ -5,32 +5,32 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     tools:context=".IntroActivity">
 
     <ImageView
-        android:id="@+id/app_logo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:contentDescription="@string/app_logo"
+        android:id="@+id/entry_logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:contentDescription="@string/app_name"
         android:src="@drawable/app_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="436dp"
+        android:layout_marginTop="8dp"
         android:text="@string/app_name"
         android:textColor="@color/black"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="@+id/app_logo"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/app_logo"
-        app:layout_constraintTop_toTopOf="@+id/app_logo" />
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/entry_logo"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/entry_logo"
+        app:layout_constraintTop_toBottomOf="@+id/entry_logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

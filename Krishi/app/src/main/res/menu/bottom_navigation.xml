@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/home"
-        android:title="@string/home"
-        android:icon="@drawable/house_door_fill"/>
+    <item android:title="@string/home"
+        android:icon="@drawable/house_door_fill"
+        android:id="@+id/home"/>
 
-    <item android:id="@+id/weather"
-        android:title="@string/weather"
-        android:icon="@drawable/cloud_sun"/>
 
-    <item android:id="@+id/companies"
-        android:title="@string/companies"
-        android:icon="@drawable/buildings"/>
+    <item android:title="@string/crops"
+        android:icon="@drawable/flower3"
+        android:id="@+id/crops"/>
 
-    <item android:icon="@drawable/sign_yield"
-        android:title="@string/explore"
-        android:id="@+id/explore"/>
+<!--
+    <item android:title="@string/camera"
+        android:icon="@drawable/camera"
+        android:id="@+id/camera"/>
+-->
+
+
+    <item android:title="@string/market"
+        android:icon="@drawable/graph_up_arrow"
+        android:id="@+id/market"/>
+
+    <item android:title="@string/profile"
+        android:icon="@drawable/person_circle"
+        android:id="@+id/app_logo_tool"/>
+
 </menu>

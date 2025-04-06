@@ -2,110 +2,76 @@ package in.ascentrasolutions.krishi.Fragments;
 
 import android.os.Bundle;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import android.os.Handler;
-import android.os.Looper;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import in.ascentrasolutions.krishi.Fetchers.DataFetcher;
 import in.ascentrasolutions.krishi.R;
 
 
 public class DataFragment extends Fragment {
 
-    private static final String TAG ="data";
-    private TextView para;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_data, container, false);
 
+        Toolbar toolbar = requireActivity().findViewById(R.id.toolbar);
+        toolbar.setVisibility(View.VISIBLE);
+        BottomNavigationView bottomNavigationView = requireActivity().findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setVisibility(View.VISIBLE);
 
-        para = view.findViewById(R.id.para);
+        SwipeRefreshLayout swipeRefreshLayout = view.findViewById(R.id.swipe_data);
 
 
-        fetchData("https://ascentrasolutions.in/apps/krishi/data?data=black");
+        Bundle args = getArguments();
+
+        if (args != null) {
+
+            String cs_id = args.getString("cs_id");
+            swipeRefreshLayout.setOnRefreshListener(() -> {
+                Bundle args1 = new Bundle();
+                DataFragment dataFragment = new DataFragment();
+
+                args1.putString("cs_id", cs_id);
+                dataFragment.setArguments(args1);
+                swipeRefreshLayout.setRefreshing(false);
+                requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.home_layout, dataFragment).commit();
+            });
+
+            assert cs_id != null;
+            Log.e("soil", cs_id);
+
+            TextView info = view.findViewById(R.id.cs_info);
+            TextView grow = view.findViewById(R.id.cs_grow);
+            TextView grow_duration = view.findViewById(R.id.cs_grow_duration);
+
+            DataFetcher dataFetcher = new DataFetcher(info, grow, grow_duration);
+            dataFetcher.fetchData("https://www.ascentrasolutions.in/apps/krishi/soil/cs_data?cs_id=" + cs_id);
+
+        } else {
+
+            swipeRefreshLayout.setOnRefreshListener(() -> {
+
+                Toast.makeText(requireContext(), "Error occurred", Toast.LENGTH_SHORT).show();
+                swipeRefreshLayout.setRefreshing(false);
+                //requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.home_layout, new dataFragment).commit();
+            });
+
+        }
+
+
         return view;
     }
-
-    public void fetchData(String url_link) {
-
-        ExecutorService executorService = Executors.newSingleThreadExecutor();
-
-        executorService.submit(() -> {
-            String result = fetchDataFromUrl(url_link);
-
-            new Handler(Looper.getMainLooper()).post(() -> onDataFetched(result));
-        });
-
-        executorService.shutdown();
-    }
-
-    private String fetchDataFromUrl(String url_link) {
-
-        StringBuilder result =  new StringBuilder();
-
-        try {
-            URL url = new URL(url_link);
-            HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-
-            try {
-                BufferedReader br = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));
-                String line;
-
-                while((line = br.readLine()) != null) {
-                    result.append(line);
-                }
-            } finally {
-                httpURLConnection.disconnect();
-            }
-        } catch(Exception e) {
-            Log.e("fetch", "error");
-        }
-
-        return result.toString();
-
-    }
-
-    private void onDataFetched(String result) {
-        if(result != null) {
-
-            try {
-
-                JSONArray jsonArray = new JSONArray(result);
-
-                for (int i = 0; i <jsonArray.length(); i++) {
-
-                    JSONObject jsonObject = jsonArray.getJSONObject(i);
-
-                    String para1 = jsonObject.getString("best_for");
-                    //Log.e(TAG, company_image);
-                    para.setText(para1);
-
-                }
-
-
-            } catch (Exception e){
-                Log.e(TAG, e.toString());
-            }
-
-
-        }
-    }
-
-
-
 }

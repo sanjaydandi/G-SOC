@@ -6,23 +6,16 @@
         android:name="android.hardware.camera"
         android:required="false" />
 
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
-    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
-    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
-
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -34,20 +27,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Krishi"
         tools:targetApi="31">
-
-        <service
-            android:name=".VoiceService"
-            android:permission="android.permission.BIND_VOICE_INTERACTION"
-            android:exported="true"/>
-
-        <meta-data
-            android:name="com.google.android.gms.auth.api.signin.API_KEY"
-            android:value="@string/default_web_client_id" />
-
-        <meta-data
-            android:name="firebase_performance_logcat_enabled"
-            android:value="true" />
-
+        <activity
+            android:name=".Uploads.HalfPriceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Uploads.UploadActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

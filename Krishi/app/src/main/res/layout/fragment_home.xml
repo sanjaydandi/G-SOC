@@ -1,415 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.HomeFragment"
-    android:background="@color/whiteSmoke">
+    android:id="@+id/home_swipe"
+    android:padding="10dp"
+    tools:context=".Fragments.HomeFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
-        <View
-            android:id="@+id/back"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/green"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="match_parent">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardViewTemp"
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:elevation="10dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="10dp"
-            app:layout_constraintBottom_toBottomOf="@+id/back"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/back">
-
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:columnCount="2"
-                android:layout_marginTop="40dp">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    >
-
-                    <ImageView
-                        android:id="@+id/imageView_temp"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:contentDescription="@string/app_name"
-                        android:src="@drawable/thermometer_high"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/temp_home"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/app_name"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView_temp" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-
-                    android:layout_columnWeight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-
-                    <ImageView
-                        android:id="@+id/imageView_humidity"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:contentDescription="@string/app_name"
-                        android:src="@drawable/droplet"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/humidity_home"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:text="@string/app_name"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView_humidity" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_columnWeight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/imageView_rainfall"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:contentDescription="@string/app_name"
-                        android:src="@drawable/cloud_drizzle"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/rainfall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/app_name"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView_rainfall" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_columnWeight="1"
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/imageView_windSpeed"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:contentDescription="@string/app_name"
-                        android:src="@drawable/wind"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-
-                <TextView
-                    android:id="@+id/windSpeed"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:text="@string/app_name"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView_windSpeed"/>
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-            </GridLayout>
-
-            <TextView
-                android:id="@+id/today"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/today"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:layout_margin="10dp"/>
-
-
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/waste_card"
-            android:layout_width="match_parent"
-            android:layout_height="280dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardViewTemp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="5dp"
-                >
+                android:id="@+id/home_inner_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-
-                <EditText
-                    android:id="@+id/editTextText"
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:textAlignment="center"
-                    android:text="Upload image"
-                    app:layout_constraintEnd_toEndOf="@+id/Price"
-                    app:layout_constraintStart_toStartOf="@+id/Price"
-                    app:layout_constraintTop_toBottomOf="@+id/Price" />
-
-                <EditText
-                    android:id="@+id/productName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:text="Product name"
-                    android:textAlignment="center"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/waste" />
+                    app:layout_constraintTop_toTopOf="parent">
 
-                <EditText
-                    android:id="@+id/quantity"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:textAlignment="center"
-                    android:text="Quantity in kgs"
-                    app:layout_constraintEnd_toEndOf="@+id/productName"
-                    app:layout_constraintStart_toStartOf="@+id/productName"
-                    app:layout_constraintTop_toBottomOf="@+id/productName" />
+                    <include layout="@layout/post_placeholder" />
 
-                <EditText
-                    android:id="@+id/Price"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:text="Price"
-                    android:textAlignment="center"
-                    app:layout_constraintEnd_toEndOf="@+id/quantity"
-                    app:layout_constraintStart_toStartOf="@+id/quantity"
-                    app:layout_constraintTop_toBottomOf="@+id/quantity" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/green_border"
-                    android:padding="10dp"
-                    android:text="Upload Now"
-                    app:layout_constraintEnd_toEndOf="@+id/Price"
-                    app:layout_constraintHorizontal_bias="0.504"
-                    app:layout_constraintStart_toStartOf="@+id/Price"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+                </com.facebook.shimmer.ShimmerFrameLayout>
 
-                <TextView
-                    android:id="@+id/waste"
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_recycler"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/sellWaste"
-                    android:textColor="@color/black"
-                    android:textSize="25sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <!--<TextView
-                    android:id="@+id/product_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="60dp"
-                    android:text="@string/product"
-                    android:textColor="@color/black"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.098"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/quantity"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="52dp"
-                    android:text="@string/quantity"
-                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.449"
-                    app:layout_constraintStart_toEndOf="@+id/product_name" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/expecting"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="52dp"
-                    android:layout_marginEnd="112dp"
-                    android:text="@string/excepting"
-                    android:textColor="@color/black"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />-->
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-        </androidx.cardview.widget.CardView>
-
-
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/firstBar"
-            app:layout_constraintTop_toBottomOf="@+id/waste_card"
-            >
-
-            <TextView
-                android:id="@+id/bestCropSold"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Best sold crops wheat"
-                android:textColor="@color/black"
-                android:textSize="25sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <com.github.mikephil.charting.charts.BarChart
-                android:id="@+id/barChart"
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/bestCropSold" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/secondBar"
-            app:layout_constraintTop_toBottomOf="@id/firstBar">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bestCultivatingCrop"
-                android:text="Best cultivating crops Okra (Ladyfinger)"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:textSize="25sp"
-                android:textColor="@color/black"/>
-
-            <com.github.mikephil.charting.charts.BarChart
-                android:id="@+id/barChartCultivation"
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:visibility="gone"
+                android:id="@+id/home_connection_failure"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/bestCultivatingCrop" />
+                app:layout_constraintTop_toTopOf="parent">
 
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/no_internet"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/connection_error"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/crop_text"
-            android:text="Crops and Soils"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            app:layout_constraintTop_toBottomOf="@+id/secondBar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-
-            />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/home_waste"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/crop_text"
-            />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/soil_recycler"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/home_waste" />
+    </androidx.core.widget.NestedScrollView>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-</androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

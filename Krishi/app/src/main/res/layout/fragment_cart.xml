@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".Fragments.CartFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/inProfileLogIn"
+        android:visibility="gone"
+        android:elevation="16dp">
+        <ImageView
+            android:id="@+id/noLogInImage"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="@drawable/white_smoke_border"
+            android:contentDescription="@string/signIn"
+            android:padding="10dp"
+            app:layout_constraintVertical_bias="0.4"
+            android:src="@drawable/account_protection"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/upload_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/medium_sea_green_border"
+            android:textColor="@color/white"
+            android:paddingStart="100dp"
+            android:paddingEnd="100dp"
+            android:text="@string/signIn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/noLogInImage"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/noLogInImage"
+            app:layout_constraintTop_toBottomOf="@+id/noLogInImage"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/signInText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in_info"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            app:drawableStartCompat="@drawable/box_arrow_in_right"
+            app:layout_constraintEnd_toEndOf="@+id/upload_signIn"
+            app:layout_constraintStart_toStartOf="@+id/upload_signIn"
+            app:layout_constraintTop_toBottomOf="@+id/upload_signIn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_layout">
+
+            <TextView
+                android:id="@+id/your_orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="@string/your_cart"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/your_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="serif"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/cart_image"
+                app:layout_constraintStart_toEndOf="@+id/cart_image"
+                app:layout_constraintTop_toBottomOf="@+id/your_orders"
+                app:layout_constraintVertical_bias="0.307" />
+
+            <TextView
+                android:id="@+id/your_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="serif"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/cart_image"
+                app:layout_constraintEnd_toStartOf="@+id/cart_image"
+                app:layout_constraintTop_toBottomOf="@+id/your_orders"
+                app:layout_constraintVertical_bias="0.394" />
+
+
+            <EditText
+                android:id="@+id/crop_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:padding="12dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cart_image" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:id="@+id/cart_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:contentDescription="@string/vendorsAndFarmers"
+                app:shapeAppearance="@style/curveImage"
+                app:layout_constraintTop_toBottomOf="@+id/your_orders" />
+
+
+            <Button
+                android:id="@+id/order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@color/mediumSeaGreen"
+                android:text="@string/orderNow"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crop_value" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

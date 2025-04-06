@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="round">
+
+    <style name="roundImage">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50dp</item>
+    </style>
+
+    <style name="roundImage40">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item>
+    </style>
+
+    <style name="curveImage">
+
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">10dp</item>
     </style>
+
+
 </resources>

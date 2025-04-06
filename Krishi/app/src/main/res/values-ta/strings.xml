@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">கிருஷி</string>
+
+    <string name="home">முகப்புப் பக்கம்</string>
+    <string name="chat">அரட்டை</string>
+    <string name="camera">கேமரா</string>
+    <string name="like">பிடிக்கும்</string>
+
+
+    <string name="crops">பயிர்கள்</string>
+    <string name="posts">இடுகைகள்</string>
+
+    <string name="voice">குரல்</string>
+    <string name="market">சந்தை</string>
+    <string name="settings">அமைப்புகள்</string>
+    <string name="signIn">உள்நுழை</string>
+    <string name="display">காட்சி</string>
+    <string name="darkMode">இருண்ட பயன்முறை</string>
+    <string name="upload">பதிவேற்று</string>
+    <string name="terms">விதிமுறைகள் மற்றும் கொள்கை</string>
+    <string name="help">உதவி</string>
+    <string name="about">பற்றி</string>
+    <string name="feedback">கருத்து அனுப்பு</string>
+
+    <string name="yourMsg">உங்கள் செய்தி..</string>
+
+    <string name="count">243423</string>
+    <string name="vendors">விற்பனையாளர்கள்</string>
+    <string name="halfprice">பாதி விலை அறுவடை</string>
+    <string name="interactors">ஊடாடுபவர்கள்</string>
+    <string name="interacting">தொடர்பு கொள்வது</string>
+    <string name="interact">தொடர்பு கொள்ளுங்கள்</string>
+    <string name="message">செய்தி</string>
+
+    <string name="soils">மண்கள்</string>
+
+
+    <string name="maxTemp">அதிகபட்ச வெப்பநிலை C இல்</string>
+    <string name="minTemp">குறைந்தபட்ச வெப்பநிலை C இல்</string>
+    <string name="avgTemp">சராசரி வெப்பநிலை C இல்</string>
+    <string name="itRain">மழை பெய்ய வாய்ப்பு</string>
+    <string name="windKph">KPH இல் காற்றின் வேகம்</string>
+
+    <string name="value">33.3</string>
+
+
+    <string name="time">நேரம்</string>
+    <string name="temp_c">C இல் வெப்பநிலை</string>
+    <string name="humidity">ஈரப்பதம்</string>
+    <string name="cloud">மேகம்</string>
+    <string name="windChill">C இல் காற்று குளிர்</string>
+    <string name="heat">காலநிலையில் வெப்பம்</string>
+    <string name="dewPoint">C இல் பனிப்புள்ளி</string>
+
+    <string name="no_chat">அரட்டை இல்லை</string>
+
+    <string name="grow_duration">வளர்ச்சி காலம்</string>
+    <string name="grow">வளருங்கள்</string>
+    <string name="weather">வானிலை</string>
+    <string name="language">மொழி</string>
+
+    <string name="weather7">7 நாட்கள் வானிலை</string>
+    <string name="contact">தொடர்பு</string>
+    <string name="profile">சுயவிவரம்</string>
+
+
+
+    <string name="farmer_info">விவசாயி தேர்வுக்கு டிக் மார்க் கிடைத்தது.</string>
+    <string name="user_info">பயனர் தேர்வுக்கு டிக் மார்க் கிடைக்கவில்லை.</string>
+    <string name="user">பயனர்</string>
+    <string name="farmer">விவசாயி</string>
+    <string name="sign_in_info">கூகிள் மூலம் உள்நுழையவும்</string>
+    <string name="sign_in_google">கூகிள் மூலம் உள்நுழையவும்</string>
+    <string name="uploadImage">படத்தை பதிவேற்று</string>
+    <string name="selectImage">படத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="postTitle">தலைப்பு இடுகையிடு</string>
+    <string name="price">விலை</string>
+    <string name="quantity">அளவு</string>
+    <string name="name">பெயர்</string>
+    <string name="timeout">காலாவதியான பயிர்களைப் பதிவேற்று</string>
+    <string name="logout">வெளியேறு</string>
+    <string name="logined">ஏற்கனவே உள்நுழைந்துவிட்டேன்</string>
+    <string name="uploadPost">இடுகையைப் பதிவேற்று</string>
+
+
+
+
+    <string name="connection_error">அச்சச்சோ! நீங்கள் இணையத்துடன் இணைக்கப்படவில்லை.</string>
+
+
+    <string name="logIn">உள் நுழை</string>
+
+    <string name="email">example@email.com</string>
+    <string name="password">******************</string>
+    <string name="createAccount">ஒரு கணக்கை உருவாக்கு</string>
+    <string name="fullName">முழு பெயர்</string>
+    <string name="alreadyAccount">ஏற்கனவே கணக்கு உள்ளதா? உள்நுழையவும்</string>
+    <string name="accountPreferences">கணக்கு விருப்பத்தேர்வுகள்</string>
+    <string name="appPreferences">பயன்பாட்டு விருப்பத்தேர்வுகள்</string>
+    <string name="policyAndTerms">கொள்கை மற்றும் உதவி</string>
+
+    <string name="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="repeatPassword">கடவுச்சொல்லை மீண்டும் செய்யவும்</string>
+    <string name="email_field">மின்னஞ்சல் புலம் காலியாக உள்ளது.</string>
+    <string name="password_field">கடவுச்சொல் புலம் காலியாக உள்ளது.</string>
+    <string name="password_repeat_field">கடவுச்சொல்லை மீண்டும் உள்ளிடுவதற்கான புலம் காலியாக உள்ளது.</string>
+    <string name="password_equal">கடவுச்சொல் மற்றும் மீண்டும் மீண்டும் உள்ளிடும் கடவுச்சொல் ஒன்றாக இருக்க வேண்டும்.</string>
+    <string name="full_name_field">முழுப் பெயர் புலம் காலியாக உள்ளது.</string>
+    <string name="noAccounts">கணக்குகள் எதுவும் கிடைக்கவில்லை.</string>
+    <string name="loading">ஏற்றுகிறது...</string>
+    <string name="technicalError">தொழில்நுட்பப் பிழை</string>
+    <string name="forgot_password">கடவுச்சொல் மறந்துவிட்டது</string>
+    <string name="resetPassword">கடவுச்சொல்லை மீட்டமைக்க</string>
+    <string name="otp">OTP-ஐச் சரிபார்க்கவும்</string>
+    <string name="login_success">ஏற்கனவே! உள்நுழையவும்.</string>
+    <string name="viewProfile">சுயவிவரத்தைக் காண்க</string>
+    <string name="editProfile">சுயவிவரத்தைத் திருத்து</string>
+    <string name="cropGraph">விற்பனை செய்யப்பட்ட பயிர்களின் வரைபடம்</string>
+    <string name="cart">வண்டியில்</string>
+    <string name="orders">ஆர்டர்கள்</string>
+    <string name="your_orders">உங்கள் ஆர்டர்கள்</string>
+    <string name="your_cart">உங்கள் வண்டி</string>
+
+
+</resources>

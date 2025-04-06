@@ -37,6 +37,7 @@ public class IntroActivity extends AppCompatActivity {
             startActivity(intent);
             overridePendingTransition(R.anim.fadein, R.anim.fadeout);
             finish(); // Finish the splash activity so it's not on the back stack
-        }, 3000);
+        }, 1000);
+
     }
 }

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Uploads.UploadFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/upload_layout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/uploadImage"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="@drawable/white_smoke_border"
+            android:contentDescription="@string/upload"
+            android:padding="10dp"
+            android:src="@drawable/cloud_upload"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <Button
+            android:id="@+id/upload_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/medium_sea_green_border"
+            android:padding="5dp"
+            android:text="@string/uploadPost"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/uploadImage"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="@+id/uploadImage"
+            app:layout_constraintTop_toBottomOf="@+id/uploadImage"
+            app:layout_constraintVertical_bias="0.043" />
+
+        <Button
+            android:id="@+id/upload_half_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/medium_sea_green_border"
+            android:padding="5dp"
+            android:text="@string/halfprice"
+            app:layout_constraintEnd_toEndOf="@+id/upload_post"
+            app:layout_constraintStart_toStartOf="@+id/upload_post"
+            app:layout_constraintTop_toBottomOf="@+id/upload_post" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/upload_sign_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/noLogInImage"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="@drawable/white_smoke_border"
+            android:contentDescription="@string/signIn"
+            android:padding="10dp"
+            app:layout_constraintVertical_bias="0.4"
+            android:src="@drawable/account_protection"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/upload_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/medium_sea_green_border"
+            android:textColor="@color/white"
+            android:paddingStart="100dp"
+            android:paddingEnd="100dp"
+            android:text="@string/signIn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/noLogInImage"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/noLogInImage"
+            app:layout_constraintTop_toBottomOf="@+id/noLogInImage"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/signInText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in_info"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            app:drawableStartCompat="@drawable/box_arrow_in_right"
+            app:layout_constraintEnd_toEndOf="@+id/upload_signIn"
+            app:layout_constraintStart_toStartOf="@+id/upload_signIn"
+            app:layout_constraintTop_toBottomOf="@+id/upload_signIn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

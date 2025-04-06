@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SignIn.CreateAccountFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:id="@+id/createAccountImage"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="@drawable/white_smoke_border"
+            android:contentDescription="@string/createAccount"
+            android:src="@drawable/create_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/createAccountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="@string/createAccount"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createAccountImage" />
+
+        <TextView
+            android:id="@+id/full_name_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:visibility="gone"
+            android:text="@string/full_name_field"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createAccountText" />
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/person_circle"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="@string/fullName"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createAccountText" />
+
+
+        <TextView
+            android:id="@+id/email_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:visibility="gone"
+            android:text="@string/email_field"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullName" />
+
+        <EditText
+            android:id="@+id/email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/envelope_at"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullName" />
+
+
+        <TextView
+            android:id="@+id/password_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/password_field"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_edit" />
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_edit" />
+
+
+        <TextView
+            android:id="@+id/password_repeat_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/password_repeat_field"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_edit" />
+
+        <EditText
+            android:id="@+id/password_edit_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="20dp"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="@string/repeatPassword"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_edit" />
+
+        <Button
+            android:id="@+id/createAccountButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/medium_sea_green_border"
+            android:text="@string/createAccount"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_edit_repeat" />
+
+        <TextView
+            android:id="@+id/alreadyAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alreadyAccount"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createAccountButton" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

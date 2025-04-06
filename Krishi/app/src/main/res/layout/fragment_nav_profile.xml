@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".Profile.NavProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_user_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/roundImage40" />
+
+        <TextView
+            android:id="@+id/nav_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/profile"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_user_image"
+            app:layout_constraintStart_toEndOf="@+id/profile_user_image"
+            app:layout_constraintTop_toTopOf="@+id/profile_user_image"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/view_profile_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/viewProfile"
+            android:textColor="@color/lightBlue"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/profile_user_image"
+            app:layout_constraintTop_toBottomOf="@+id/nav_pro" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <View
+        android:id="@+id/nav_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_nav_bar" />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="serif"
+        android:text="@string/weather"
+        android:id="@+id/weather_nav"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:drawableStartCompat="@drawable/moon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nav_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:text="@string/halfprice"
+        android:layout_marginTop="16dp"
+        android:id="@+id/half_price_nav"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        app:drawableStartCompat="@drawable/vr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_nav" />
+
+    <TextView
+        android:id="@+id/vendors_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="serif"
+        android:text="@string/vendorsAndFarmers"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:drawableStartCompat="@drawable/buildings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/half_price_nav" />
+
+
+    <TextView
+        android:id="@+id/carts_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="@string/cart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:drawableStartCompat="@drawable/cart4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vendors_nav" />
+
+    <TextView
+        android:id="@+id/orders_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="serif"
+        android:text="@string/orders"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:drawableStartCompat="@drawable/truck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carts_nav" />
+
+    <TextView
+        android:id="@+id/setting_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="serif"
+        android:text="@string/settings"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:drawableStartCompat="@drawable/gear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orders_nav" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

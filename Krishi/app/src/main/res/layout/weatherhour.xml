@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp">
+    android:layout_margin="5dp">
 
 
     <androidx.cardview.widget.CardView
@@ -28,18 +28,20 @@
                 android:id="@+id/WeatherHourImageView"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_margin="20dp"
+                android:layout_marginTop="16dp"
                 android:contentDescription="@string/value"
                 android:src="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.009"
+                app:layout_constraintHorizontal_bias="0.14"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/time"
                 android:layout_width="wrap_content"
+                android:textSize="16sp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:text="@string/time"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/WeatherHourImageView"
@@ -52,6 +54,8 @@
                 android:id="@+id/timeText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
                 android:text="@string/value"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -61,7 +65,9 @@
 
             <TextView
                 android:id="@+id/temp_c"
+                android:layout_marginTop="8dp"
                 android:layout_width="wrap_content"
+                android:textSize="16sp"
                 android:layout_height="wrap_content"
                 android:text="@string/temp_c"
                 android:textColor="@color/black"
@@ -74,7 +80,9 @@
                 android:id="@+id/temp_cText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:layout_marginStart="12dp"
+                android:textSize="16sp"
                 android:text="@string/value"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/timeText"
@@ -83,10 +91,12 @@
                 app:layout_constraintTop_toBottomOf="@+id/timeText" />
 
             <TextView
+                android:layout_marginTop="8dp"
                 android:id="@+id/windKph"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/windKph"
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/temp_c"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -96,10 +106,12 @@
 
             <TextView
                 android:id="@+id/windKphText"
+                android:layout_marginTop="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="@string/value"
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/temp_cText"
                 app:layout_constraintStart_toEndOf="@+id/windKph"
@@ -107,10 +119,12 @@
 
             <TextView
                 android:id="@+id/humidity"
+                android:layout_marginTop="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/humidity"
                 android:textColor="@color/black"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="@+id/windKph"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/windKph"
@@ -118,10 +132,12 @@
 
 
             <TextView
+                android:layout_marginTop="8dp"
                 android:id="@+id/humidityText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="36dp"
+                android:textSize="16sp"
                 android:text="@string/value"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/windKphText"
@@ -132,9 +148,11 @@
             <TextView
                 android:id="@+id/cloud"
                 android:layout_width="wrap_content"
+                android:textSize="16sp"
                 android:layout_height="wrap_content"
                 android:text="@string/cloud"
                 android:textColor="@color/black"
+                android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="@+id/humidity"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/humidity"
@@ -145,6 +163,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="80dp"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
                 android:text="@string/value"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/humidityText"
@@ -157,6 +177,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/windChill"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/cloud"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -166,10 +188,12 @@
 
             <TextView
                 android:id="@+id/windChillText"
+                android:textSize="16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/value"
                 android:textColor="@color/black"
+                android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="@+id/cloudText"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/windChill"
@@ -180,6 +204,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/heat"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/windChill"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -192,7 +218,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/value"
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/windChillText"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -202,8 +230,10 @@
             <TextView
                 android:id="@+id/dewPoint"
                 android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
                 android:layout_height="wrap_content"
                 android:text="@string/dewPoint"
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/heat"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -213,6 +243,8 @@
             <TextView
                 android:id="@+id/dewPointText"
                 android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text="@string/value"

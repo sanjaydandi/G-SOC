@@ -16,8 +16,6 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import java.util.ArrayList;
 
-import javax.microedition.khronos.opengles.GL;
-
 import in.ascentrasolutions.krishi.Getters.Weather;
 import in.ascentrasolutions.krishi.R;
 
@@ -37,13 +35,13 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.ViewHold
 
     @NonNull
     @Override
-    public WeatherAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.weather, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull WeatherAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
         Weather weatherList = list.get(position);
 

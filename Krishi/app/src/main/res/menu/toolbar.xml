@@ -2,19 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-
-   <!-- <item
-        android:title="@string/upload"
+    <item android:title="@string/upload"
         android:id="@+id/upload"
         android:icon="@drawable/upload"
-        app:showAsAction="ifRoom"/>-->
+        app:showAsAction="ifRoom"/>
 
 
-    <item
-        android:title="@string/signIn"
+    <item android:title="@string/chat"
+        android:id="@+id/chat"
+        android:icon="@drawable/chat"
+        app:showAsAction="ifRoom"/>
+
+    <item android:title="@string/signIn"
+        android:icon="@drawable/box_arrow_in_right"
         android:id="@+id/signIn"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/box_arrow_in_right"/>
-
+        />
 </menu>

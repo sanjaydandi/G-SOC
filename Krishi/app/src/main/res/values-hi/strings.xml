@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">कृषि</string>
+
+    <string name="home">घर</string>
+    <string name="chat">बात करना</string>
+    <string name="camera">कैमरा</string>
+    <string name="like">पसंद</string>
+
+
+    <string name="crops">फसलें</string>
+    <string name="posts">पदों</string>
+
+    <string name="voice">आवाज़</string>
+    <string name="market">बाज़ार</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="signIn">दाखिल करना</string>
+    <string name="display">प्रदर्शन</string>
+    <string name="darkMode">डार्क मोड</string>
+    <string name="upload">अपलोड करें</string>
+    <string name="terms">नियम एवं नीति</string>
+    <string name="help">मदद</string>
+    <string name="about">के बारे में</string>
+    <string name="feedback">प्रतिक्रिया भेजें</string>
+
+    <string name="yourMsg">आपका संदेश..</string>
+
+    <string name="count">243423</string>
+    <string name="vendors">विक्रेता</string>
+    <string name="halfprice">आधी कीमत पर फसल</string>
+    <string name="interactors">इंटरेक्टर्स</string>
+    <string name="interacting">बातचीत</string>
+    <string name="interact">इंटरैक्ट करना</string>
+    <string name="message">संदेश</string>
+
+    <string name="soils">मिट्टी</string>
+
+
+    <string name="maxTemp">अधिकतम तापमान C में</string>
+    <string name="minTemp">न्यूनतम तापमान डिग्री सेल्सियस में</string>
+    <string name="avgTemp">औसत तापमान (C में)</string>
+    <string name="itRain">वर्षा की संभावना</string>
+    <string name="windKph">हवा की गति KPH में</string>
+
+    <string name="value">33.3</string>
+
+
+    <string name="time">समय</string>
+    <string name="temp_c">तापमान C में</string>
+    <string name="humidity">नमी</string>
+    <string name="cloud">बादल</string>
+    <string name="windChill">सी में पवन शीतलता</string>
+    <string name="heat">जलवायु में गर्मी</string>
+    <string name="dewPoint">ओस बिंदु (C)</string>
+    <string name="no_chat">गपशप नहीं</string>
+
+    <string name="grow_duration">बढ़ने की अवधि</string>
+    <string name="grow">बढ़ना</string>
+    <string name="weather">मौसम</string>
+    <string name="language">भाषा</string>
+
+    <string name="weather7">7 दिन का मौसम</string>
+    <string name="contact">संपर्क</string>
+    <string name="profile">प्रोफ़ाइल</string>
+
+
+    <string name="farmer_info">किसान चयन को टिक मार्क मिला।</string>
+    <string name="user_info">उपयोगकर्ता के चयन पर टिक मार्क नहीं मिलता है।</string>
+    <string name="user">उपयोगकर्ता</string>
+    <string name="farmer">किसान</string>
+    <string name="sign_in_info">इस सुविधा को अनलॉक करने के लिए साइन इन करें</string>
+    <string name="sign_in_google">गूगल के साथ साइन इन करें</string>
+    <string name="uploadImage">तस्विर अपलोड करना</string>
+    <string name="selectImage">छवि का चयन करें</string>
+    <string name="postTitle">पोस्ट का शीर्षक</string>
+    <string name="price">कीमत</string>
+    <string name="quantity">मात्रा</string>
+    <string name="name">नाम</string>
+    <string name="timeout">अपलोड समय समाप्त फसलें</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="logined">पहले से लॉगिन है</string>
+    <string name="uploadPost">पोस्ट अपलोड करें</string>
+
+
+
+    <string name="connection_error">ओह! आप इंटरनेट से कनेक्ट नहीं हैं।</string>
+
+
+    <string name="logIn">लॉग इन करें</string>
+
+    <string name="email">example@email.com</string>
+    <string name="password">******************</string>
+    <string name="createAccount">खाता बनाएं</string>
+    <string name="fullName">पूरा नाम</string>
+    <string name="alreadyAccount">क्या आपके पास पहले से एक खाता मौजूद है? लॉगिन करें</string>
+    <string name="accountPreferences">खाता प्राथमिकताएं</string>
+    <string name="appPreferences">ऐप प्राथमिकताएं</string>
+    <string name="policyAndTerms">नीति और सहायता</string>
+
+    <string name="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="repeatPassword">पासवर्ड दोहराएं</string>
+    <string name="email_field">ईमेल फ़ील्ड रिक्त है</string>
+    <string name="password_field">पासवर्ड फ़ील्ड रिक्त है</string>
+    <string name="password_repeat_field">दोहराएँ पासवर्ड फ़ील्ड रिक्त है</string>
+    <string name="password_equal">पासवर्ड और दोहराया गया पासवर्ड एक ही होना चाहिए</string>
+    <string name="full_name_field">पूरा नाम फ़ील्ड रिक्त है</string>
+    <string name="noAccounts">कोई खाता नहीं मिला</string>
+    <string name="loading">लोड हो रहा है...</string>
+    <string name="technicalError">तकनीकी त्रुटि</string>
+    <string name="forgot_password">पासवर्ड भूल गए</string>
+    <string name="resetPassword">पासवर्ड रीसेट</string>
+    <string name="otp">ओटीपी सत्यापित करें</string>
+    <string name="login_success">पहले से ही! लॉगिन करें.</string>
+    <string name="viewProfile">प्रोफ़ाइल देखें</string>
+    <string name="editProfile">प्रोफ़ाइल संपादित करें</string>
+    <string name="cropGraph">बेची गई फसलों का ग्राफ</string>
+    <string name="cart">कार्ट</string>
+    <string name="orders">आदेश</string>
+    <string name="your_orders">तुम्हारे ऑर्डर</string>
+    <string name="your_cart">आपका कार्ट</string>
+
+
+
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Uploads.HalfPriceActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chat_signin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/noLogInImage"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="@drawable/white_smoke_border"
+            android:contentDescription="@string/signIn"
+            android:padding="10dp"
+            app:layout_constraintVertical_bias="0.4"
+            android:src="@drawable/account_protection"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/chat_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/medium_sea_green_border"
+            android:textColor="@color/white"
+            android:paddingStart="100dp"
+            android:paddingEnd="100dp"
+            android:text="@string/signIn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/noLogInImage"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/noLogInImage"
+            app:layout_constraintTop_toBottomOf="@+id/noLogInImage"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/signInText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in_info"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            app:drawableStartCompat="@drawable/box_arrow_in_right"
+            app:layout_constraintEnd_toEndOf="@+id/chat_signIn"
+            app:layout_constraintStart_toStartOf="@+id/chat_signIn"
+            app:layout_constraintTop_toBottomOf="@+id/chat_signIn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/upload_layout">
+
+
+
+
+
+            <TextView
+                android:id="@+id/upload_post_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/timeout"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.057"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/btnSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/green_border"
+                android:padding="5dp"
+                android:text="@string/selectImage"
+                app:layout_constraintEnd_toEndOf="@+id/time_out_quantity"
+                app:layout_constraintHorizontal_bias="0.519"
+                app:layout_constraintStart_toStartOf="@+id/time_out_quantity"
+                app:layout_constraintTop_toBottomOf="@+id/time_out_quantity" />
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSelect"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/green_border"
+                android:enabled="false"
+                android:padding="5dp"
+                android:text="@string/uploadImage"
+                app:layout_constraintEnd_toEndOf="@+id/btnSelect"
+                app:layout_constraintHorizontal_bias="0.357"
+                app:layout_constraintStart_toStartOf="@+id/btnSelect"
+                app:layout_constraintTop_toBottomOf="@+id/btnSelect" />
+
+            <EditText
+                android:id="@+id/time_out_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:autofillHints=""
+                android:textColor="@color/black"
+                android:background="@drawable/border"
+                android:padding="12dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="@string/name"
+                app:layout_constraintEnd_toEndOf="@+id/upload_post_text"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/upload_post_text"
+                app:layout_constraintTop_toBottomOf="@+id/upload_post_text" />
+
+            <EditText
+                android:id="@+id/time_out_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:textColor="@color/black"
+                android:background="@drawable/border"
+                android:padding="12dp"
+                android:inputType="numberDecimal"
+                android:hint="@string/price"
+                app:layout_constraintEnd_toEndOf="@+id/time_out_name"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/time_out_name"
+                app:layout_constraintTop_toBottomOf="@+id/time_out_name" />
+
+            <EditText
+                android:id="@+id/time_out_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@drawable/border"
+                android:layout_marginTop="20dp"
+                android:padding="13dp"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="@string/quantity"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/time_out_price"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/time_out_price"
+                app:layout_constraintTop_toBottomOf="@+id/time_out_price" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/btnUpload"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="@+id/btnUpload"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/btnUpload"
+                app:layout_constraintTop_toBottomOf="@+id/btnUpload" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

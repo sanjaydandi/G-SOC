@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">కృషి</string>
+
+    <string name="home">హొమ్ పేజ్</string>
+    <string name="chat">చాట్</string>
+    <string name="camera">కెమెరా</string>
+    <string name="like">ఇష్టం</string>
+
+
+    <string name="crops">పంటలు</string>
+    <string name="posts">పోస్ట్‌లు</string>
+    <string name="voice">వాయిస్</string>
+    <string name="market">మార్కెట్</string>
+    <string name="settings">సెట్టింగులు</string>
+    <string name="signIn">సైన్ ఇన్ చేయండి</string>
+    <string name="display">ప్రదర్శన</string>
+    <string name="darkMode">డార్క్ మోడ్</string>
+    <string name="upload">అప్‌లోడ్ చేయండి</string>
+    <string name="terms">నిబంధనలు మరియు విధానం</string>
+    <string name="help">సహాయం</string>
+    <string name="about">మా గురించి</string>
+    <string name="feedback">అభిప్రాయాన్ని పంపండి</string>
+
+    <string name="yourMsg">మీ సందేశం..</string>
+
+    <string name="count">243423</string>
+    <string name="vendors">విక్రేతలు</string>
+    <string name="halfprice">సగం ధరకే పంట</string>
+    <string name="interactors">ఇంటరాక్టర్లు</string>
+    <string name="interacting">సంకర్షణ చెందుతోంది</string>
+    <string name="interact">ఇంటరాక్ట్ అవ్వండి</string>
+    <string name="message">సందేశం</string>
+
+    <string name="soils">నేలలు</string>
+
+
+    <string name="maxTemp">గరిష్ట ఉష్ణోగ్రత C లో</string>
+    <string name="minTemp">C లో కనిష్ట ఉష్ణోగ్రత</string>
+    <string name="avgTemp">C లో సగటు ఉష్ణోగ్రత</string>
+    <string name="itRain">వర్షం పడే అవకాశాలు</string>
+    <string name="windKph">KPH లో గాలి వేగం</string>
+
+    <string name="value">33.3</string>
+
+
+    <string name="time">సమయం</string>
+    <string name="temp_c">C లో ఉష్ణోగ్రత</string>
+    <string name="humidity">తేమ</string>
+    <string name="cloud">మేఘం</string>
+    <string name="windChill">C లో గాలి చలి</string>
+    <string name="heat">వాతావరణంలో వేడి</string>
+    <string name="dewPoint">C లో మంచు బిందువు</string>
+
+    <string name="no_chat">చాట్ లేదు</string>
+
+    <string name="grow_duration">పెరుగుదల వ్యవధి</string>
+    <string name="grow">పెరుగు</string>
+    <string name="weather">వాతావరణం</string>
+    <string name="language">భాష</string>
+
+    <string name="weather7">7 రోజుల వాతావరణం</string>
+    <string name="contact">సంప్రదించండి</string>
+    <string name="profile">ప్రొఫైల్</string>
+
+
+    <string name="farmer_info">రైతు ఎంపికకు టిక్ మార్క్ వచ్చింది.</string>
+    <string name="user_info">వినియోగదారు ఎంపికకు టిక్ మార్క్ రాదు.</string>
+    <string name="user">వినియోగదారు</string>
+    <string name="farmer">రైతు</string>
+    <string name="sign_in_info">ఈ ఫీచర్‌ను అన్‌లాక్ చేయడానికి సైన్ ఇన్ చేయండి.</string>
+    <string name="sign_in_google">గూగుల్ తో సైన్ ఇన్ అవ్వండి</string>
+    <string name="uploadImage">చిత్రాన్ని అప్‌లోడ్ చేయండి</string>
+    <string name="selectImage">చిత్రాన్ని ఎంచుకోండి</string>
+    <string name="postTitle">పోస్ట్ శీర్షిక</string>
+    <string name="price">ధర</string>
+    <string name="quantity">పరిమాణం</string>
+    <string name="name">పేరు</string>
+    <string name="timeout">గడువు ముగిసిన పంటలను అప్‌లోడ్ చేయండి</string>
+    <string name="logout">లాగ్ అవుట్</string>
+    <string name="logined">ఇప్పటికే లాగిన్ అయ్యారు</string>
+    <string name="uploadPost">పోస్ట్‌ను అప్‌లోడ్ చేయండి</string>
+
+
+
+    <string name="connection_error">అయ్యో! మీరు ఇంటర్నెట్‌కు కనెక్ట్ కాలేదు.</string>
+
+
+    <string name="logIn">అయ్యో! మీరు ఇంటర్నెట్‌కు కనెక్ట్ కాలేదు.</string>
+
+    <string name="email">example@email.com</string>
+    <string name="password">******************</string>
+    <string name="createAccount">ఒక ఖాతాను సృష్టించండి</string>
+    <string name="fullName">పూర్తి పేరు</string>
+    <string name="alreadyAccount">ఇప్పటికే ఖాతా ఉందా? లాగిన్ అవ్వండి</string>
+    <string name="accountPreferences">ఖాతా ప్రాధాన్యతలు</string>
+    <string name="appPreferences">యాప్ ప్రాధాన్యతలు</string>
+    <string name="policyAndTerms">విధానం మరియు సహాయం</string>
+
+    <string name="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="repeatPassword">పాస్‌వర్డ్‌ను పునరావృతం చేయండి</string>
+    <string name="email_field">ఇమెయిల్ ఫీల్డ్ ఖాళీగా ఉంది.</string>
+    <string name="password_field">పాస్‌వర్డ్ ఫీల్డ్ ఖాళీగా ఉంది.</string>
+    <string name="password_repeat_field">పునరావృత పాస్‌వర్డ్ ఫీల్డ్ ఖాళీగా ఉంది.</string>
+    <string name="password_equal">పాస్‌వర్డ్ మరియు పునరావృత పాస్‌వర్డ్ ఒకేలా ఉండాలి.</string>
+    <string name="full_name_field">పూర్తి పేరు ఫీల్డ్ ఖాళీగా ఉంది.</string>
+    <string name="noAccounts">ఖాతాలు ఏవీ కనుగొనబడలేదు</string>
+    <string name="loading">లోడ్ అవుతోంది...</string>
+    <string name="technicalError">సాంకేతిక లోపం</string>
+    <string name="forgot_password">పాస్‌వర్డ్ మర్చిపోయాను</string>
+    <string name="resetPassword">పాస్‌వర్డ్‌ను రీసెట్ చేయండి</string>
+    <string name="otp">OTP ని ధృవీకరించండి</string>
+    <string name="login_success">ఇప్పటికే! లాగిన్ అవ్వండి.</string>
+    <string name="viewProfile">ప్రొఫైల్‌ను వీక్షించండి</string>
+    <string name="editProfile">ప్రొఫైల్‌ను సవరించండి</string>
+    <string name="cropGraph">అమ్మిన పంటల గ్రాఫ్</string>
+    <string name="cart">కార్ట్</string>
+    <string name="orders">ఆర్డర్లు</string>
+    <string name="your_orders">మీ ఆర్డర్‌లు</string>
+    <string name="your_cart">మీ కార్ట్</string>
+
+
+
+
+</resources>

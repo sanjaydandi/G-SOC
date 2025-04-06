@@ -9,9 +9,21 @@
     <color name="white">#FFFFFFFF</color>
 
     <!--Imported items-->
-
     <color name="green">#4CAF50</color>
-    <color name="whiteSmoke">#f5f5f5</color>
-
+    <color name="whiteSmoke">#F5F5F5</color>
     <color name="lightBlue">#03A9F4</color>
+    <color name="shimmerColor">#DDDDDD</color>
+
+    <color name="toolbar">#F5F5F5</color>
+
+    <color name="theme">#2E7D32</color>
+
+    <color name="forestGreen">#228B22</color>
+    <color name="mediumSeaGreen">#3CB371</color>
+    <color name="materialGreen">#4CAF50</color>
+    <color name="darkGreen">#2E7D32</color>
+    <color name="lightGray">#A9A9A9</color>
+    <color name="red">#FF0000</color>
+
+
 </resources>

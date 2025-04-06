@@ -18,51 +18,49 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import java.util.ArrayList;
 
 import in.ascentrasolutions.krishi.Fragments.DataFragment;
-import in.ascentrasolutions.krishi.Getters.Soil;
+import in.ascentrasolutions.krishi.Getters.Soils;
 import in.ascentrasolutions.krishi.R;
 
 public class SoilAdapter extends RecyclerView.Adapter<SoilAdapter.ViewHolder> {
 
-
-    private final ArrayList<Soil> list;
     private final Context context;
+    private final ArrayList<Soils> soils;
 
-    public SoilAdapter(Context context, ArrayList<Soil> list) {
+    public SoilAdapter(Context context, ArrayList<Soils> soils) {
         this.context = context;
-        this.list = list;
+        this.soils = soils;
     }
-
-
 
     @NonNull
     @Override
     public SoilAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.soil, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.soils, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull SoilAdapter.ViewHolder holder, int position) {
+        Soils list = soils.get(position);
 
-        Soil list = this.list.get(position);
-
-        holder.name.setText(list.getSoil_name());
+        holder.soil_name.setText(list.getSoil_name());
 
         Glide.with(context)
                 .asBitmap()
+                .load(list.getSoil_image())
+                .error(R.drawable.app_logo)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .error(R.drawable.cloud_sun_fill)
-                .load(list.getSoil_color())
-                .into(holder.image);
+                .into(holder.soil_image);
 
-        holder.itemView.setOnClickListener(view -> {
+
+
+        holder.soil_image.setOnClickListener(view -> {
             DataFragment dataFragment = new DataFragment();
             Bundle args = new Bundle();
 
-            args.putString("", "");
-            dataFragment.setArguments(args);
-
             AppCompatActivity appCompatActivity = (AppCompatActivity) view.getContext();
+
+            args.putString("cs_id", list.getSoil_id());
+            dataFragment.setArguments(args);
 
             appCompatActivity.getSupportFragmentManager().beginTransaction().replace(R.id.home_layout, dataFragment).addToBackStack(null).commit();
         });
@@ -71,17 +69,17 @@ public class SoilAdapter extends RecyclerView.Adapter<SoilAdapter.ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return list.size();
+        return soils.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        private final TextView name;
-        private final ImageView image;
+        private final TextView soil_name;
+        private final ImageView soil_image;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            name = itemView.findViewById(R.id.soil_name);
-            image = itemView.findViewById(R.id.soil_image);
+            soil_image = itemView.findViewById(R.id.crop_image);
+            soil_name = itemView.findViewById(R.id.crop_name);
 
         }
     }

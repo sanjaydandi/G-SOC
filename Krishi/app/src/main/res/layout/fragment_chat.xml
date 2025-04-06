@@ -3,20 +3,135 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:padding="16dp"
     android:layout_height="match_parent"
     tools:context=".Fragments.ChatFragment">
 
 
-    <EditText
-        android:id="@+id/editTextText2"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chat_signin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Chat"
+        android:layout_height="match_parent"
+        android:elevation="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/noLogInImage"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="@drawable/white_smoke_border"
+            android:contentDescription="@string/signIn"
+            android:padding="10dp"
+            app:layout_constraintVertical_bias="0.4"
+            android:src="@drawable/account_protection"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/chat_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/medium_sea_green_border"
+            android:textColor="@color/white"
+            android:paddingStart="100dp"
+            android:paddingEnd="100dp"
+            android:text="@string/signIn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/noLogInImage"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/noLogInImage"
+            app:layout_constraintTop_toBottomOf="@+id/noLogInImage"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/signInText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in_info"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            app:drawableStartCompat="@drawable/box_arrow_in_right"
+            app:layout_constraintEnd_toEndOf="@+id/chat_signIn"
+            app:layout_constraintStart_toStartOf="@+id/chat_signIn"
+            app:layout_constraintTop_toBottomOf="@+id/chat_signIn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chat_swipe">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/chat_layout"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/first_chat_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_chat"
+                        android:fontFamily="serif"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/first_chat_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/first_chat_text" />
+
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/message"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

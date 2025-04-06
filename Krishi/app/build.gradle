@@ -1,9 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
-    id 'com.google.gms.google-services'
-    id 'com.google.firebase.crashlytics'
-    id 'com.google.firebase.firebase-perf'
-
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -20,8 +17,19 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        release {
+            storeFile file("D:/android signed keys/asmusic.jks") // path to your .jks file
+            storePassword "Ashokkumar21"
+            keyAlias "Key0"
+            keyPassword "Ashokkumar21"
+        }
+    }
+
+
     buildTypes {
         release {
+            signingConfig signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -38,6 +46,7 @@ dependencies {
     implementation libs.material
     implementation libs.activity
     implementation libs.constraintlayout
+    implementation libs.firebase.analytics
     implementation libs.firebase.auth
     implementation libs.credentials
     implementation libs.credentials.play.services.auth
@@ -46,22 +55,16 @@ dependencies {
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
 
-    // Importing firebase
-    implementation platform(libs.firebase.bom)
-    implementation libs.google.firebase.analytics
-    implementation(libs.firebase.crashlytics)
-    implementation(libs.com.google.firebase.firebase.analytics)
-    implementation(libs.firebase.perf)
-
-
-    implementation libs.play.services.auth  // Add this line
-    implementation libs.viewpager2
-
-
     implementation libs.glide
+    annotationProcessor libs.compiler
+    implementation libs.shimmer
 
+    implementation libs.swiperefreshlayout
+
+    implementation libs.play.services.auth
+
+    implementation libs.play.services.location
     implementation libs.mpandroidchart
-    //implementation libs.mysql.connector.java // or the latest version
 
 
 

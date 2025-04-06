@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ಕೃಷಿ</string>
+
+    <string name="home">ಮರಳಿ ಪ್ರಥಮ ಪುಟಕ್ಕೆ</string>
+    <string name="chat">ಚಾಟ್ ಮಾಡಿ</string>
+    <string name="camera">ಕ್ಯಾಮೆರಾ</string>
+    <string name="like">ಹಾಗೆ</string>
+
+
+    <string name="crops">ಬೆಳೆಗಳು</string>
+    <string name="posts">ಪೋಸ್ಟ್‌ಗಳು</string>
+
+    <string name="voice">ಧ್ವನಿ</string>
+    <string name="market">ಮಾರುಕಟ್ಟೆ</string>
+    <string name="settings">ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
+    <string name="signIn">ಸೈನ್ ಇನ್ ಮಾಡಿ</string>
+    <string name="display">ಪ್ರದರ್ಶನ</string>
+    <string name="darkMode">ಡಾರ್ಕ್ ಮೋಡ್</string>
+    <string name="upload">ಅಪ್‌ಲೋಡ್ ಮಾಡಿ</string>
+    <string name="terms">ನಿಯಮಗಳು ಮತ್ತು ನೀತಿ</string>
+    <string name="help">ಸಹಾಯ</string>
+    <string name="about">ನಮ್ಮ ಬಗ್ಗೆ</string>
+    <string name="feedback">ಪ್ರತಿಕ್ರಿಯೆ ಕಳುಹಿಸಿ</string>
+
+    <string name="yourMsg">ನಿಮ್ಮ ಸಂದೇಶ..</string>
+
+    <string name="count">243423</string>
+    <string name="vendors">ಮಾರಾಟಗಾರರು</string>
+    <string name="halfprice">ಅರ್ಧ ಬೆಲೆಯ ಕೊಯ್ಲು</string>
+    <string name="interactors">ಸಂವಹನಕಾರರು</string>
+    <string name="interacting">ಪರಸ್ಪರ ಸಂವಹನ ನಡೆಸುವುದು</string>
+    <string name="interact">ಸಂವಹನ ನಡೆಸಿ</string>
+    <string name="message">ಸಂದೇಶ</string>
+
+    <string name="soils">ಮಣ್ಣುಗಳು</string>
+
+
+    <string name="maxTemp">ಗರಿಷ್ಠ ತಾಪಮಾನ C ನಲ್ಲಿ</string>
+    <string name="minTemp">ಕನಿಷ್ಠ ತಾಪಮಾನ C ನಲ್ಲಿ</string>
+    <string name="avgTemp">C ನಲ್ಲಿ ಸರಾಸರಿ ತಾಪಮಾನ</string>
+    <string name="itRain">ಮಳೆ ಬರುವ ಸಾಧ್ಯತೆಗಳು</string>
+    <string name="windKph">KPH ನಲ್ಲಿ ಗಾಳಿಯ ವೇಗ</string>
+
+    <string name="value">33.3</string>
+
+
+    <string name="time">ಸಮಯ</string>
+    <string name="temp_c">C ನಲ್ಲಿ ತಾಪಮಾನ</string>
+    <string name="humidity">ಆರ್ದ್ರತೆ</string>
+    <string name="cloud">ಮೋಡ</string>
+    <string name="windChill">C ನಲ್ಲಿ ಚಳಿ ಗಾಳಿ</string>
+    <string name="heat">ವಾತಾವರಣದಲ್ಲಿ ಉಷ್ಣತೆ</string>
+    <string name="dewPoint">C ನಲ್ಲಿ ಇಬ್ಬನಿ ಬಿಂದು</string>
+
+    <string name="no_chat">ಚಾಟ್ ಇಲ್ಲ</string>
+
+
+    <string name="grow_duration">ಬೆಳವಣಿಗೆಯ ಅವಧಿ</string>
+    <string name="grow">ಬೆಳೆಯಿರಿ</string>
+    <string name="weather">ಹವಾಮಾನ</string>
+    <string name="language">ಭಾಷೆ</string>
+
+    <string name="weather7">7 ದಿನಗಳ ಹವಾಮಾನ</string>
+    <string name="contact">ಸಂಪರ್ಕಿಸಿ</string>
+    <string name="profile">ಪ್ರೊಫೈಲ್</string>
+
+
+
+    <string name="farmer_info">ರೈತರ ಆಯ್ಕೆಗೆ ಟಿಕ್ ಮಾರ್ಕ್ ಸಿಕ್ಕಿತು.</string>
+    <string name="user_info">ಬಳಕೆದಾರರ ಆಯ್ಕೆಗೆ ಟಿಕ್ ಮಾರ್ಕ್ ಸಿಗುವುದಿಲ್ಲ.</string>
+    <string name="user">ಬಳಕೆದಾರ</string>
+    <string name="farmer">ರೈತ</string>
+    <string name="sign_in_info">ಈ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಲು ಸೈನ್ ಇನ್ ಮಾಡಿ</string>
+    <string name="sign_in_google">Google ನೊಂದಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ</string>
+    <string name="uploadImage">ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ</string>
+    <string name="selectImage">ಚಿತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="postTitle">ಪೋಸ್ಟ್ ಶೀರ್ಷಿಕೆ</string>
+    <string name="price">ಬೆಲೆ</string>
+    <string name="quantity">ಪ್ರಮಾಣ</string>
+    <string name="name">ಹೆಸರು</string>
+    <string name="timeout">ಸಮಯ ಮೀರಿದ ಬೆಳೆಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ</string>
+    <string name="logout">ಲಾಗ್ ಔಟ್ ಮಾಡಿ</string>
+    <string name="logined">ಈಗಾಗಲೇ ಲಾಗಿನ್ ಆಗಿದ್ದೇನೆ</string>
+    <string name="uploadPost">ಪೋಸ್ಟ್ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ</string>
+
+
+
+
+    <string name="connection_error">ಓಹ್! ನೀವು ಇಂಟರ್ನೆಟ್‌ಗೆ ಸಂಪರ್ಕಗೊಂಡಿಲ್ಲ.</string>
+
+
+    <string name="logIn">ಲಾಗ್ ಇನ್ ಮಾಡಿ</string>
+
+    <string name="email">example@email.com</string>
+    <string name="password">******************</string>
+    <string name="createAccount">ಖಾತೆಯನ್ನು ತೆರೆಯಿರಿ</string>
+    <string name="fullName">ಪೂರ್ಣ ಹೆಸರು</string>
+    <string name="alreadyAccount">ಈಗಾಗಲೇ ಖಾತೆ ಇದೆಯೇ? ಲಾಗಿನ್ ಮಾಡಿ</string>
+    <string name="accountPreferences">ಖಾತೆ ಆದ್ಯತೆಗಳು</string>
+    <string name="appPreferences">ಅಪ್ಲಿಕೇಶನ್ ಆದ್ಯತೆಗಳು</string>
+    <string name="policyAndTerms">ನೀತಿ ಮತ್ತು ಸಹಾಯ</string>
+
+    <string name="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="repeatPassword">ಪಾಸ್‌ವರ್ಡ್ ಪುನರಾವರ್ತಿಸಿ</string>
+    <string name="email_field">ಇಮೇಲ್ ಕ್ಷೇತ್ರ ಖಾಲಿಯಾಗಿದೆ.</string>
+    <string name="password_field">ಪಾಸ್‌ವರ್ಡ್ ಕ್ಷೇತ್ರ ಖಾಲಿಯಾಗಿದೆ.</string>
+    <string name="password_repeat_field">ಪುನರಾವರ್ತಿತ ಪಾಸ್‌ವರ್ಡ್ ಕ್ಷೇತ್ರವು ಖಾಲಿಯಾಗಿದೆ.</string>
+    <string name="password_equal">ಪಾಸ್‌ವರ್ಡ್ ಮತ್ತು ಪುನರಾವರ್ತಿತ ಪಾಸ್‌ವರ್ಡ್ ಒಂದೇ ಆಗಿರಬೇಕು.</string>
+    <string name="full_name_field">ಪೂರ್ಣ ಹೆಸರಿನ ಕ್ಷೇತ್ರ ಖಾಲಿಯಾಗಿದೆ.</string>
+    <string name="noAccounts">ಯಾವುದೇ ಖಾತೆಗಳು ಕಂಡುಬಂದಿಲ್ಲ.</string>
+    <string name="loading">ಲೋಡ್ ಆಗುತ್ತಿದೆ...</string>
+    <string name="technicalError">ತಾಂತ್ರಿಕ ದೋಷ</string>
+    <string name="forgot_password">ಪಾಸ್‌ವರ್ಡ್ ಮರೆತಿರಾ?</string>
+    <string name="resetPassword">ಪಾಸ್ವರ್ಡ್ ಮರುಹೊಂದಿಸಿ</string>
+    <string name="otp">ಒಟಿಪಿ ಪರಿಶೀಲಿಸಿ</string>
+    <string name="login_success">ಈಗಾಗಲೇ! ಲಾಗಿನ್ ಆಗಿ.</string>
+    <string name="viewProfile">ಪ್ರೊಫೈಲ್ ವೀಕ್ಷಿಸಿ</string>
+    <string name="editProfile">ಪ್ರೊಫೈಲ್ ಸಂಪಾದಿಸಿ</string>
+    <string name="cropGraph">ಮಾರಾಟವಾದ ಬೆಳೆಗಳ ಗ್ರಾಫ್</string>
+    <string name="cart">ಕಾರ್ಟ್</string>
+    <string name="orders">ಆದೇಶಗಳು</string>
+    <string name="your_orders">ನಿಮ್ಮ ಆರ್ಡರ್‌ಗಳು</string>
+    <string name="your_cart">ನಿಮ್ಮ ಕಾರ್ಟ್</string>
+
+
+</resources>

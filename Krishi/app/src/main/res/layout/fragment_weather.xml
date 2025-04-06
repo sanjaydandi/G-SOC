@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".Fragments.WeatherFragment"
     android:background="@color/white">
 
@@ -13,39 +14,55 @@
         android:layout_height="wrap_content"
         >
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/SImageView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@color/black"
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weather"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
 
         <TextView
+            android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/temp"
-            android:text="asfs"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/weather"
+            android:visibility="gone"
             android:textColor="@color/black"
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="@+id/SImageView"
-            app:layout_constraintHorizontal_bias="0.49"
-            app:layout_constraintStart_toStartOf="@+id/SImageView"
-            app:layout_constraintTop_toBottomOf="@+id/SImageView" />
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/temp"
+            app:layout_constraintStart_toStartOf="@+id/temp"
+            app:layout_constraintTop_toBottomOf="@+id/temp" />
 
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/SImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@color/black"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <TextView
             android:id="@+id/location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="Ongole"
             android:textColor="@color/black"
-            android:textSize="25sp"
+            android:textSize="30sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/temp"
-            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/temp"
             app:layout_constraintTop_toTopOf="@+id/temp" />
 
@@ -53,14 +70,17 @@
             android:id="@+id/days"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="7 days weather"
+            android:text="@string/weather7"
+            android:fontFamily="sans-serif"
             android:textColor="@color/black"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/location" />
+            app:layout_constraintTop_toBottomOf="@+id/SImageView" />
+
+
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/weather_recycler"
